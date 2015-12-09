@@ -1,0 +1,15 @@
+//
+//  PhotoReviewViewController.h
+//  hfwzone
+//
+//  Created by star on 15/1/13.
+//  Copyright (c) 2015年 hfw.kunwang. All rights reserved.
+//
+
+#import "BaseViewController.h"
+
+@interface PhotoReviewViewController : BaseViewController
+
+@property (nonatomic, copy) NSString * photoUrl;
+
+@end

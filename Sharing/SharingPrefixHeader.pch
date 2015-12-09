@@ -1,0 +1,78 @@
+//
+//  SharingPrefixHeader.pch
+//  Sharing
+//
+//  Created by huangchengqi on 15/9/18.
+//  Copyright (c) 2015年 简小胖 All rights reserved.
+//
+
+#ifndef Sharing_SharingPrefixHeader_pch
+#define Sharing_SharingPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AFNetworking.h"//主要用于网络请求方法
+//#import "UIKit+AFNetworking.h"//里面有异步加载图片的方法
+#import "Toast+UIView.h"//弹出框
+#import "UIView+Additions.h"
+#import "FenXiangUserInfoModel.h"
+#import "FXUtilities.h"
+#import "FenXiangBaseModel.h"
+#import "MJRefresh.h"
+#import "MJRefreshFooterView.h"
+#import "MJRefreshHeaderView.h"
+#import "UIImageView+WebCache.h"
+#import "HomeRequest.h"
+#import "NewsViewController.h"
+
+
+#import "UIView+Additions.h"
+#import "UIImageView+WebCache.h"
+#import "Toast+UIView.h"
+#import "UIColor+Hex.h"
+#import "GlobalFunction.h"
+#import "MBProgressHUD.h"
+#import "FenXiangUserInfoModel.h"
+#import "LoginRequest.h"
+#import "FXUtilities.h"
+#import "UIImageView+WebCache.h"
+
+
+//上拉 下拉刷新
+#import "FCXRefreshFooterView.h"
+#import "FCXRefreshHeaderView.h"
+#import "UIScrollView+FCXRefresh.h"
+
+#define mainUrl @"http://api.jlxmt.com/"
+
+#define ContenUrl @"http://www.jlxmt.com/jlonghtml/Article/html.html?wid=1&key="
+
+#define scaleWidth self.view.width/375
+#define scaleHeight self.view.height/667
+
+#define viewWidth  self.view.width
+#define viewHeight self.view.height
+
+//状态栏高度
+#define statusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define tabbarHeight 49
+
+#define IOS_VERSION         ([[[UIDevice currentDevice] systemVersion] floatValue])
+#define ios7AndLater        (IOS_VERSION >= 7.0)
+#define navColor            0xEC7015
+// 屏幕尺寸
+#define kDeviceWidth                ([UIScreen mainScreen].bounds.size.width)
+#define KDeviceHeight               ([UIScreen mainScreen].bounds.size.height)
+//设备判断
+#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6H ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define iPhone6plusH ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+#endif

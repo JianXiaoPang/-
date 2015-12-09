@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditorWebViewController">
+            <connections>
+                <outlet property="Title" destination="eRD-qj-q4t" id="gfU-ES-fyi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP0-pP-coq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-gC-aWO">
+                            <rect key="frame" x="0.0" y="22" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="1pH-Pq-Npp"/>
+                            </constraints>
+                            <state key="normal" image="all_lefe.png"/>
+                            <connections>
+                                <action selector="goBack:" destination="-1" eventType="touchUpInside" id="vvd-Nd-iDd"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRD-qj-q4t">
+                            <rect key="frame" x="93" y="31" width="189" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="eRD-qj-q4t" secondAttribute="height" multiplier="9:1" id="hH2-Uf-e66"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="FfX-gC-aWO" firstAttribute="leading" secondItem="dP0-pP-coq" secondAttribute="leading" id="2eA-3e-Qil"/>
+                        <constraint firstAttribute="bottom" secondItem="FfX-gC-aWO" secondAttribute="bottom" constant="2" id="8EW-mK-shX"/>
+                        <constraint firstItem="FfX-gC-aWO" firstAttribute="top" secondItem="dP0-pP-coq" secondAttribute="top" constant="22" id="SYG-Cm-5xc"/>
+                        <constraint firstItem="eRD-qj-q4t" firstAttribute="centerX" secondItem="dP0-pP-coq" secondAttribute="centerX" id="WHP-kx-Hbh"/>
+                        <constraint firstAttribute="height" constant="64" id="X1U-xB-MZI"/>
+                        <constraint firstItem="eRD-qj-q4t" firstAttribute="width" secondItem="dP0-pP-coq" secondAttribute="height" multiplier="189:64" id="YVS-eq-Azd"/>
+                        <constraint firstItem="eRD-qj-q4t" firstAttribute="centerY" secondItem="dP0-pP-coq" secondAttribute="centerY" constant="10" id="v4y-oT-YMg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dP0-pP-coq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F3d-uq-fcc"/>
+                <constraint firstItem="dP0-pP-coq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gab-T8-ITp"/>
+                <constraint firstAttribute="trailing" secondItem="dP0-pP-coq" secondAttribute="trailing" id="mmS-h9-S3h"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="all_lefe.png" width="44" height="44"/>
+    </resources>
+</document>
